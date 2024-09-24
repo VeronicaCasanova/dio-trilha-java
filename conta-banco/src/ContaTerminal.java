@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner; // Importando a classe Scanner
 
 public class ContaTerminal {
@@ -20,12 +21,9 @@ public class ContaTerminal {
         System.out.print("Por favor, digite o Saldo: ");
         double saldo = scanner.nextDouble(); // Lê o saldo
 
-        // Exibir a mensagem de conta criada
-        String mensagem = "Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco! " +
-                          "Sua agência é " + agencia + ", conta " + numero + 
-                          " e seu saldo " + saldo + " já está disponível para saque.";
-        
-        System.out.println(mensagem); // Imprime a mensagem final
+        // Exibe a mensagem de conta criada com o saldo formatado
+        DecimalFormat df = new DecimalFormat("#,##0.00");
+        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco!%nSua agência é %s, conta %d e seu saldo R$%s já está disponível para saque.", nomeCliente, agencia, numero, df.format(saldo));
 
         // Fechar o scanner para evitar vazamento de recursos
         scanner.close();
