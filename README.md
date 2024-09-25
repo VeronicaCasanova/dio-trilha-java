@@ -6,4 +6,3 @@ Bem-vindo à pasta `dio-trilha-java`! Aqui você encontrará uma coleção de de
 
 ### 1. ContaBanco
 - **Descrição**: Um projeto simples que simula uma conta bancária, permitindo que o usuário insira informações como número da agência, número da conta, nome do cliente e saldo. A saída é formatada para exibir as informações de forma clara e organizada.
-- **Tecnologias Utilizadas**: Java
