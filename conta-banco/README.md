@@ -46,9 +46,15 @@ Quando o programa for executado, você verá as seguintes solicitações no term
     Por favor, digite o Nome do Cliente: 
     Por favor, digite o Saldo:
   ````
+Exemplo de Dados para Inserção
+
+| Agência | Conta | Nome do Cliente | Saldo   |
+|---------|-------|-----------------|---------|
+| 067-8   | 1021  | Mario Andrade    | 237,48  |
+
 
 Após inserir os dados, o programa exibirá uma mensagem como esta:
   ```bash
-    Olá [Nome Cliente], obrigado por criar uma conta em nosso banco!
-    Sua agência é [Agencia], conta [Numero] e seu saldo R$[Saldo] já está disponível para saque.
+    Olá [Nome do Cliente], obrigado por criar uma conta em nosso banco!
+    Sua agência é [Agência], conta [Conta] e seu saldo R$[Saldo] já está disponível para saque.
   ````
